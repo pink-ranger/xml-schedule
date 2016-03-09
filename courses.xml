@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE timeslots SYSTEM "timetable.dtd">
+<timeslots>
+	<slot time="0830">
+		<booking>
+			<room>sw5 1840</room>
+			<day>friday</day>
+			<course>blaw3600</course>
+			<instructor>catherine ryan</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="0930">
+		<booking>
+			<room>se12 323</room>
+			<day>monday</day>
+			<course>comp4985</course>
+			<instructor>aman abdulla</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>tuesday</day>
+			<course>comp4981</course>
+			<instructor>aman abdulla</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>wednesday</day>
+			<course>comp4985</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>thursday</day>
+			<course>comp4981</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>sw5 1840</room>
+			<day>friday</day>
+			<course>blaw3600</course>
+			<instructor>catherine ryan</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1030">
+		<booking>
+			<room>se12 323</room>
+			<day>monday</day>
+			<course>comp4985</course>
+			<instructor>aman abdulla</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>tuesday</day>
+			<course>comp4981</course>
+			<instructor>aman abdulla</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>wednesday</day>
+			<course>comp4985</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>thursday</day>
+			<course>comp4981</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1130">
+		<booking>
+			<room>sw1 1205</room>
+			<day>monday</day>
+			<course>comp4735</course>
+			<instructor>mirela gutica</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>sw5 1850</room>
+			<day>tuesday</day>
+			<course>comp4560</course>
+			<instructor>brenda fine</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>wednesday</day>
+			<course>comp4985</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>sw3 1710</room>
+			<day>thursday</day>
+			<course>comp4735</course>
+			<instructor>mirela gutica</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1230">
+		<booking>
+			<room>sw9 127</room>
+			<day>monday</day>
+			<course>blaw3600</course>
+			<instructor>catherine ryan</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 323</room>
+			<day>wednesday</day>
+			<course>comp4981</course>
+			<instructor>aman abdulla</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
+			<room>sw3 1750</room>
+			<day>friday</day>
+			<course>comp4735</course>
+			<instructor>brenda fine</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1330">
+		<booking>
+			<room>sw9 127</room>
+			<day>monday</day>
+			<course>blaw3600</course>
+			<instructor>catherine ryan</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>sw1 1205</room>
+			<day>wednesday</day>
+			<course>comp4735</course>
+			<instructor>mirela gutica</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1430">
+		<booking>
+			<room>sw5 1840</room>
+			<day>tuesday</day>
+			<course>comp4711</course>
+			<instructor>james parry</instructor>
+			<type>lecture</type>
+		</booking>
+	</slot>
+	<slot time="1530">
+		<booking>
+			<room>se12 320</room>
+			<day>monday</day>
+			<course>comp4560</course>
+			<instructor>brenda fine</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 321</room>
+			<day>tuesday</day>
+			<course>comp4560</course>
+			<instructor>james parry</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 322</room>
+			<day>thursday</day>
+			<course>comp4735</course>
+			<instructor>mathew linder</instructor>
+			<type>lab</type>
+		</booking>
+	</slot>
+	<slot time="1530">
+		<booking>
+			<room>se12 320</room>
+			<day>monday</day>
+			<course>comp4560</course>
+			<instructor>brenda fine</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 321</room>
+			<day>tuesday</day>
+			<course>comp4560</course>
+			<instructor>james parry</instructor>
+			<type>lab</type>
+		</booking>
+		<booking>
+			<room>se12 322</room>
+			<day>thursday</day>
+			<course>comp4735</course>
+			<instructor>mathew linder</instructor>
+			<type>lab</type>
+		</booking>
+	</slot>
+</timeslots>
