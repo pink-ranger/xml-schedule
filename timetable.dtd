@@ -1,1 +1,30 @@
+<!-- root element -->
+<!ELEMENT timetable (times, days, courses)>
 
+<!-- times -->
+<!ELEMENT times (time+)>
+<!ELEMENT time (booking+)>
+<!ATTLIST time slot CDATA #REQUIRED>
+
+<!-- days -->
+<!ELEMENT days (day+)>
+<!ELEMENT day (booking+)>
+<!ATTLIST day code (monday|tuesday|wednesday|thursday|friday) #REQUIRED>
+
+<!-- courses -->
+<!ELEMENT courses (course+)>
+<!ELEMENT course (booking+)>
+<!ATTLIST course name CDATA #REQUIRED>
+
+<!ELEMENT booking ( room |
+                    day_of_week | 
+                    course_name |                   
+                    time_slot |
+                    instructor |
+                    type )*>
+<!ELEMENT room          (#PCDATA)>
+<!ELEMENT day_of_week   (#PCDATA)>
+<!ELEMENT course_name   (#PCDATA)>
+<!ELEMENT instructor    (#PCDATA)>
+<!ELEMENT type          (#PCDATA)>
+<!ELEMENT time_slot     (#PCDATA)>
