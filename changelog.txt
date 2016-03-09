@@ -1,1 +1,7 @@
-
+Time                                Comment
+Tuesday, March 8, 2016 8:03PM	    Added completed timetable.dtd file
+Tuesday, March 8, 2016 8:03PM	    Added completed timetable.xml file
+Tuesday, March 8, 2016 8:03PM	    Renamed timeslots.xml to times.xml
+Tuesday, March 8, 2016 4:48PM       Added days xml file
+Tuesday, March 8, 2016 4:45PM       Added timeslots xml file
+Tuesday, March 8, 2016 4:41PM       Added courses xml file
