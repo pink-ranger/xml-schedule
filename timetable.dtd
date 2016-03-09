@@ -1,27 +1,35 @@
-<!-- root element -->
+<!-- The root element timetable, will contain definitions for the times,
+days and course elements -->
 <!ELEMENT timetable (times, days, courses)>
 
-<!-- times -->
+<!-- the element times, will contain multiple time elements with a required 
+slot attribute whose value must be one of the ones defined -->
 <!ELEMENT times (time+)>
 <!ELEMENT time (booking+)>
-<!ATTLIST time slot CDATA #REQUIRED>
+<!ATTLIST time slot (0830|0930|1030|1130|1230|1330|1430|1530|1630) #REQUIRED>
 
-<!-- days -->
+<!-- the element days, will contain multiple day elements with a required 
+code attribute whose value must be one of the ones defined -->
 <!ELEMENT days (day+)>
 <!ELEMENT day (booking+)>
 <!ATTLIST day code (monday|tuesday|wednesday|thursday|friday) #REQUIRED>
 
-<!-- courses -->
+<!-- the element courses, will contain multiple course elements with a required 
+name attribute -->
 <!ELEMENT courses (course+)>
 <!ELEMENT course (booking+)>
 <!ATTLIST course name CDATA #REQUIRED>
 
+<!-- the element booking, will contain a combination of elements defined 
+below -->
 <!ELEMENT booking ( room |
                     day_of_week | 
                     course_name |                   
                     time_slot |
                     instructor |
-                    type )*>
+                    type )+>
+
+<!-- These values elements constraint -->
 <!ELEMENT room          (#PCDATA)>
 <!ELEMENT day_of_week   (#PCDATA)>
 <!ELEMENT course_name   (#PCDATA)>
