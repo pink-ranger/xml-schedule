@@ -1,52 +1,50 @@
-<?xml version="1.0"?>
-<!DOCTYPE days SYSTEM "timetable.dtd">
 <days>
 	<day code="monday">
 		<booking>
-			<course>comp4985</course>
-			<time>0930</time>
+			<course_name>comp4985</course_name>
+			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4985</course>
-			<time>1030</time>
+			<course_name>comp4985</course_name>
+			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4735</course>
-			<time>1130</time>
+			<course_name>comp4735</course_name>
+			<time_slot>1130</time_slot>
 			<room>sw1 1205</room>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
-			<course>blaw3600</course>
-			<time>1230</time>
+			<course_name>blaw3600</course_name>
+			<time_slot>1230</time_slot>
 			<room>sw9 127</room>
 			<instructor>catherine ryan</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>blaw3600</course>
-			<time>1330</time>
+			<course_name>blaw3600</course_name>
+			<time_slot>1330</time_slot>
 			<room>sw9 127</room>
 			<instructor>catherine ryan</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4560</course>
-			<time>1530</time>
+			<course_name>comp4560</course_name>
+			<time_slot>1530</time_slot>
 			<room>se12 320</room>
 			<instructor>brenda fine</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4560</course>
-			<time>1630</time>
+			<course_name>comp4560</course_name>
+			<time_slot>1630</time_slot>
 			<room>se12 320</room>
 			<instructor>brenda fine</instructor>
 			<type>lab</type>
@@ -54,36 +52,36 @@
 	</day>
 	<day code="tuesday">
 		<booking>
-			<course>comp4981</course>
-			<time>0930</time>
+			<course_name>comp4981</course_name>
+			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4981</course>
-			<time>1030</time>
+			<course_name>comp4981</course_name>
+			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4711</course>
-			<time>1430</time>
+			<course_name>comp4711</course_name>
+			<time_slot>1430</time_slot>
 			<room>sw5 1840</room>
 			<instructor>james parry</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
-			<course>comp4711</course>
-			<time>1530</time>
+			<course_name>comp4711</course_name>
+			<time_slot>1530</time_slot>
 			<room>se12 321</room>
 			<instructor>james parry</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4711</course>
-			<time>1630</time>
+			<course_name>comp4711</course_name>
+			<time_slot>1630</time_slot>
 			<room>se12 321</room>
 			<instructor>james parry</instructor>
 			<type>lab</type>
@@ -91,36 +89,36 @@
 	</day>
 	<day code="wednesday">
 		<booking>
-			<course>comp4985</course>
-			<time>0930</time>
+			<course_name>comp4985</course_name>
+			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4985</course>
-			<time>1030</time>
+			<course_name>comp4985</course_name>
+			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4985</course>
-			<time>1130</time>
+			<course_name>comp4985</course_name>
+			<time_slot>1130</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4981</course>
-			<time>1230</time>
+			<course_name>comp4981</course_name>
+			<time_slot>1230</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4735</course>
-			<time>1330</time>
+			<course_name>comp4735</course_name>
+			<time_slot>1330</time_slot>
 			<room>sw1 1205</room>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
@@ -128,36 +126,36 @@
 	</day>
 	<day code="thursday">
 		<booking>
-			<course>comp4985</course>
-			<time>0930</time>
+			<course_name>comp4985</course_name>
+			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4985</course>
-			<time>1030</time>
+			<course_name>comp4985</course_name>
+			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4735</course>
-			<time>1130</time>
+			<course_name>comp4735</course_name>
+			<time_slot>1130</time_slot>
 			<room>sw3 1710</room>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
-			<course>comp4735</course>
-			<time>1530</time>
+			<course_name>comp4735</course_name>
+			<time_slot>1530</time_slot>
 			<room>sw3 1710</room>
 			<instructor>matthew linder</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
-			<course>comp4735</course>
-			<time>1630</time>
+			<course_name>comp4735</course_name>
+			<time_slot>1630</time_slot>
 			<room>sw3 1710</room>
 			<instructor>matthew linder</instructor>
 			<type>lab</type>
@@ -165,22 +163,22 @@
 	</day>
 	<day code="friday">
 		<booking>
-			<course>blaw3600</course>
-			<time>0830</time>
+			<course_name>blaw3600</course_name>
+			<time_slot>0830</time_slot>
 			<room>sw5 1840</room>
 			<instructor>catherine ryan</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
-			<course>blaw3600</course>
-			<time>0930</time>
+			<course_name>blaw3600</course_name>
+			<time_slot>0930</time_slot>
 			<room>sw5 1840</room>
 			<instructor>catherine ryan</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
-			<course>comp4560</course>
-			<time>1230</time>
+			<course_name>comp4560</course_name>
+			<time_slot>1230</time_slot>
 			<room>sw3 1750</room>
 			<instructor>brenda fine</instructor>
 			<type>lecture</type>
