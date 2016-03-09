@@ -1,4 +1,6 @@
-Time                                Comment
+Time                                Comments 
+Tuesday, March 8, 2016 8:22PM	    Added comments to the dtd file
+Tuesday, March 8, 2016 8:22PM	    Added constraint to the slot attribute of the time element
 Tuesday, March 8, 2016 8:03PM	    Added completed timetable.dtd file
 Tuesday, March 8, 2016 8:03PM	    Added completed timetable.xml file
 Tuesday, March 8, 2016 8:03PM	    Renamed timeslots.xml to times.xml
