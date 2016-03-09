@@ -1,3 +1,4 @@
 Time                                Comment
+Tuesday, March 8, 2016 4:48PM		Added days xml file
 Tuesday, March 8, 2016 4:45PM       Added timeslots xml file
 Tuesday, March 8, 2016 4:41PM       Added courses xml file
