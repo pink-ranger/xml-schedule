@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0"?>
 <!DOCTYPE timeslots SYSTEM "timetable.dtd">
 <timeslots>
@@ -398,4 +397,3 @@
         <instructor>james parry</instructor>
     </booking>
 </course>
->>>>>>> 512db3921d3a8f7dee29ed79dac30220cecc5f2f
