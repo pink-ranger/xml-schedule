@@ -7,13 +7,14 @@ class Timetable extends CI_Model {
     
     public function __construct() {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH, 'timetable.xml');
+        $this->xml = simplexml_load_file(DATAPATH, 'timetable.xml');//this is wrong, look at news
         
-        foreach($this->xml->timetable->times->time as $time) {
-            $key = (string)$times['slot']];
+        foreach($this->xml->times->time as $time) {
+            $key = (string)$times['slot'];
             $bookingArray = array();
             foreach($time->booking as $booking)
             {
+                $booking->time = $time['slot'];
                 array_push($bookingArray, new Booking($booking));
             }
             $timeslots[$key] = $bookingArray;
@@ -24,7 +25,7 @@ class Timetable extends CI_Model {
             $bookingArray = array();
             foreach($day->booking as $booking)
             {
-                array_push($bookingArray, new Booking($booking));
+                array_push($bookingArray, new Booking("day", $key, $booking));
             }
             $days[$key] = $bookingArray;
         }
@@ -34,7 +35,7 @@ class Timetable extends CI_Model {
             $bookingArray = array();
             foreach($course->booking as $booking)
             {
-                array_push($bookingArray, new Booking($booking));
+                array_push($bookingArray, new Booking("course", $key, $booking));
             }
             $courses[$key] = $bookingArray;
         }
@@ -42,17 +43,44 @@ class Timetable extends CI_Model {
 }
 
 class Booking {
-    private $day;
+    private $day; //public plz
     private $name;
     private $time;
     private $room;
     private $instructor;
     private $type;
+    private $course;
     
-    public function __construct($booking) {
+    public function __construct($keyType, $key, $booking) {
+        if ($keyType == "time")
+        {
+            $this->time = $key;
+        }
+        else
+        {
+            $this->time = $booking->time_slot;
+        }
+        
+        if ($keyType == "course")
+        {
+            $this->course = $key;
+        }
+        else
+        {
+            $this->course = $booking->course_name;
+        }
+        
+        if ($keyType == "day")
+        {
+            $this->day = $key;
+        }
+        else
+        {
+            $this->day = $booking->day_of_week;
+        }
+        
         $this->day = $day_of_week;
         $this->name = $booking->course_name;
-        $this->time = $booking->time_slot;
         $this->instructor = $booking->instructor;
         $this->type = $booking->type;
     }
