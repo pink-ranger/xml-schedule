@@ -156,7 +156,7 @@
             <instructor>brenda fine</instructor>
         </booking>
         <booking>
-            <day_of_week>monday</day_of_week>
+            <day_of_week>tuesday</day_of_week>
             <time_slot>1130</time_slot>
             <room>sw5 1850</room>
             <type>lecture</type>

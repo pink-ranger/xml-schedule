@@ -1,6 +1,8 @@
 Time                                Comments 
-Tuesday, March 25, 2016 4:30PM      Created a Welcome controller and a timetable view
-Tuesday, March 24, 2016 4:30PM      Created the Timetable model
+Saturday, March 26, 2016 6:40PM     Created the view and completed the search functionality
+Friday, March 25, 2016 11:07PM      Wrote functions to find specific bookings
+Friday, March 25, 2016 4:30PM       Created a Welcome controller and a timetable view
+Tuesday, March 22, 2016 4:30PM      Created the Timetable model
 Tuesday, March 8, 2016  8:22PM	    Added comments to the dtd file
 Tuesday, March 8, 2016  8:22PM	    Added constraint to the slot attribute of the time element
 Tuesday, March 8, 2016  8:03PM	    Added completed timetable.dtd file
