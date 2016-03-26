@@ -1,3 +1,59 @@
+<form action="search" name="search" method="POST">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      Days <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      {daysList}
+      <li><a href="#">{day}</a></li>
+      {/daysList}
+    </ul>
+    <input name="search_day" type="hidden"/>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+      Slots <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      {slotsList}
+      <li><a href="#">{slot}</a></li>
+      {/slotsList}
+    </ul>
+    <input name="search_slot" type="hidden"/>
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+
+<div>
+  <h2>Search Results</h2>
+  <h3 id = "output">{message}</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Facet</th>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Course</th>
+        <th>Room</th>
+        <th>Instructor</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {search_results}
+      <tr>
+        <td>{facet}</td>
+        <td>{day}</td>
+        <td>{time}</td>
+        <td>{course}</td>
+        <td>{room}</td>
+        <td>{instructor}</td>
+        <td>{type}</td>
+      </tr>
+      {/search_results}
+    </tbody> 
+  </table>
+</div>
 
 <h2>List of Bookings (Times Facet)</h2>  
 <table class="table">

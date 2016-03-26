@@ -1,4 +1,5 @@
 Time                                Comments 
+Tuesday, March 25, 2016 11:07PM     Wrote functions to find specific bookings
 Tuesday, March 25, 2016 4:30PM      Created a Welcome controller and a timetable view
 Tuesday, March 24, 2016 4:30PM      Created the Timetable model
 Tuesday, March 8, 2016  8:22PM	    Added comments to the dtd file

@@ -17,7 +17,6 @@ class timetable extends CI_Model {
             {
                 $booking->time_slot = $key;
                 array_push($bookingArray, new Booking($booking));
-                //$this->timeslots[] = new Booking($booking);
             }
             $this->timeslots[$key] = $bookingArray;
         }
@@ -44,12 +43,10 @@ class timetable extends CI_Model {
             $this->courses[$key] = $bookingArray;
         }
     }
+    
     function getTimeslots()
     {
-      //var_dump($this->timeslots);
-      //var_dump($this->timeslots);
       return $this->timeslots;
-      
     }
     
     function getDays()
@@ -60,6 +57,83 @@ class timetable extends CI_Model {
     function getCourses()
     {
       return $this->courses;
+    }
+
+    function getDaysForDropDown()
+    {
+        $days = $this->days;
+        $daysArray = array();
+        foreach($days as $key => $value)
+        {
+            $daysArray[] = $key;
+        }
+        return $daysArray;
+    }
+
+    function  getTimesForDropdown()
+    {
+        $times = $this->timeslots;
+        $timesArray = array();
+        foreach($times as $key => $value)
+        {
+            $timesArray[] = $key;
+        }
+        return $timesArray;
+    }
+
+
+    function findBookingsUsingTimesFacet($day, $slot)
+    {
+        $times = $this->timeslots;
+        foreach($times as $key => $value)
+        {
+            if($key == $slot)
+            {
+                foreach($value as $booking)
+                {
+                    if ($booking->day == $day)
+                    {
+                        return $booking;
+                    }
+                }
+            }
+        }
+        echo NULL;
+    }
+
+    function findBookingsUsingDaysFacet($day, $slot)
+    {
+        $days = $this->days;
+        foreach($days as $key => $value)
+        {
+            if($key == $day)
+            {
+                foreach($value as $booking)
+                {
+                    if ($booking->time == $slot)
+                    {
+                        return $booking;
+                    }
+                }
+            }
+        }
+        echo NULL;
+    }
+
+    function findBookingsUsingCoursesFacet($day, $slot)
+    {
+        $courses = $this->courses;
+        foreach($courses as $course)
+        {    
+            foreach($course as $booking)
+            {
+                if ($booking->day == $day && $booking->time == $slot)
+                {
+                    return $booking;
+                }
+            }
+        }
+        echo NULL;
     }
 }
 

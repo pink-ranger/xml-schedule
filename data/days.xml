@@ -66,6 +66,13 @@
 			<type>lab</type>
 		</booking>
 		<booking>
+			<course_name>comp4560</course_name>
+			<time_slot>1130</time_slot>
+			<room>sw5 1850</room>
+			<instructor>brenda fine</instructor>
+			<type>lecture</type>
+		</booking>
+		<booking>
 			<course_name>comp4711</course_name>
 			<time_slot>1430</time_slot>
 			<room>sw5 1840</room>
