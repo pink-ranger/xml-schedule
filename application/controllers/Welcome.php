@@ -1,25 +1,48 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Welcome extends Application {
+  /*
+  function __construct() 
+  {
+    parent::__construct();
+    $this->load->model('timetable');
+  }*/
+  
+  public function index()
+  {
+    $this->load->model('timetable');
+    $times = $this->timetable->getTimeslots();
+    $days = $this->timetable->getDays();
+    $courses = $this->timetable->getCourses();
+    foreach($times as $time)
+    {
+      foreach($time as $booking)
+      {
+        $timesArray[] = $booking;
+      }
+    } 
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
-	}
+    foreach($days as $day)
+    {
+      foreach($day as $booking)
+      {
+        $daysArray[] = $booking;
+      }
+    }
+
+    foreach($courses as $course)
+    {
+      foreach($course as $booking)
+      {
+        $coursesArray[] = $booking;
+      }
+    }
+    
+    $this->data['pagebody'] = 'timetable';
+    $this->data['times'] = $timesArray;
+    $this->data['days'] = $daysArray;
+    $this->data['courses'] = $coursesArray;
+    $this->render();
+  }
 }
