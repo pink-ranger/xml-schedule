@@ -1,87 +1,82 @@
 <?php
-class Timetable extends CI_Model {
+class timetable extends CI_Model {
     protected $xml = null;
-    protected $timeslots = Array();
-    protected $days = Array();
-    protected $courses = Array();
+    protected $timeslots = array();
+    protected $days = array();
+    protected $courses = array();
     
     public function __construct() {
         parent::__construct();
-        $this->xml = simplexml_load_file(DATAPATH, 'timetable.xml');//this is wrong, look at news
+        $this->xml = simplexml_load_file(DATAPATH . 'timetable.xml', 
+                "SimpleXMLElement", LIBXML_NOENT);
         
         foreach($this->xml->times->time as $time) {
-            $key = (string)$times['slot'];
+            $key = (string)$time['slot'];
             $bookingArray = array();
             foreach($time->booking as $booking)
             {
-                $booking->time = $time['slot'];
+                $booking->time_slot = $key;
                 array_push($bookingArray, new Booking($booking));
+                //$this->timeslots[] = new Booking($booking);
             }
-            $timeslots[$key] = $bookingArray;
+            $this->timeslots[$key] = $bookingArray;
         }
         
-        foreach($this->xml->timetable->days->day as $day) {
+        foreach($this->xml->days->day as $day) {
             $key = (string)$day['code'];
             $bookingArray = array();
             foreach($day->booking as $booking)
             {
-                array_push($bookingArray, new Booking("day", $key, $booking));
+              $booking->day_of_week = $key;
+              array_push($bookingArray, new Booking($booking));
             }
-            $days[$key] = $bookingArray;
+            $this->days[$key] = $bookingArray;
         }
         
-        foreach($this->xml->timetable->courses->course as $course) {
+        foreach($this->xml->courses->course as $course) {
             $key = (string)$course['name'];
             $bookingArray = array();
             foreach($course->booking as $booking)
             {
-                array_push($bookingArray, new Booking("course", $key, $booking));
+                $booking->course_name = $course['name'];
+                array_push($bookingArray, new Booking($booking));
             }
-            $courses[$key] = $bookingArray;
+            $this->courses[$key] = $bookingArray;
         }
+    }
+    function getTimeslots()
+    {
+      //var_dump($this->timeslots);
+      //var_dump($this->timeslots);
+      return $this->timeslots;
+      
+    }
+    
+    function getDays()
+    {
+      return $this->days;
+    }
+    
+    function getCourses()
+    {
+      return $this->courses;
     }
 }
 
 class Booking {
-    private $day; //public plz
-    private $name;
-    private $time;
-    private $room;
-    private $instructor;
-    private $type;
-    private $course;
+    public $day; 
+    public $time;
+    public $course;
+    public $room;
+    public $instructor;
+    public $type;
     
-    public function __construct($keyType, $key, $booking) {
-        if ($keyType == "time")
-        {
-            $this->time = $key;
-        }
-        else
-        {
-            $this->time = $booking->time_slot;
-        }
-        
-        if ($keyType == "course")
-        {
-            $this->course = $key;
-        }
-        else
-        {
-            $this->course = $booking->course_name;
-        }
-        
-        if ($keyType == "day")
-        {
-            $this->day = $key;
-        }
-        else
-        {
-            $this->day = $booking->day_of_week;
-        }
-        
-        $this->day = $day_of_week;
-        $this->name = $booking->course_name;
-        $this->instructor = $booking->instructor;
-        $this->type = $booking->type;
+    public function __construct($booking) {
+      $this->day = (string)$booking->day_of_week;
+      $this->time = (string)$booking->time_slot;
+      $this->course = (string)$booking->course_name;
+      $this->room = (string)$booking->room;
+      $this->instructor = (string)$booking->instructor;
+      $this->type = (string)$booking->type;
     }
 }

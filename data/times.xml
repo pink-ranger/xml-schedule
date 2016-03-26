@@ -2,7 +2,7 @@
 	<time slot="0830">
 		<booking>
 			<room>sw5 1840</room>
-			<day_of_week>friday_of_week</day_of_week>
+			<day_of_week>friday</day_of_week>
 			<course_name>blaw3600</course_name>
 			<instructor>catherine ryan</instructor>
 			<type>lecture</type>
@@ -11,35 +11,35 @@
 	<time	slot="0930">
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>comp4985</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4981</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>wednesday_of_week</day_of_week>
+			<day_of_week>wednesday</day_of_week>
 			<course_name>comp4985</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>thursday_of_week</day_of_week>
+			<day_of_week>thursday</day_of_week>
 			<course_name>comp4981</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>sw5 1840</room>
-			<day_of_week>friday_of_week</day_of_week>
+			<day_of_week>friday</day_of_week>
 			<course_name>blaw3600</course_name>
 			<instructor>catherine ryan</instructor>
 			<type>lecture</type>
@@ -48,28 +48,28 @@
 	<time slot="1030">
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>comp4985</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4981</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>wednesday_of_week</day_of_week>
+			<day_of_week>wednesday</day_of_week>
 			<course_name>comp4985</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>thursday_of_week</day_of_week>
+			<day_of_week>thursday</day_of_week>
 			<course_name>comp4981</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
@@ -78,28 +78,28 @@
 	<time slot="1130">
 		<booking>
 			<room>sw1 1205</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>sw5 1850</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4560</course_name>
 			<instructor>brenda fine</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>wednesday_of_week</day_of_week>
+			<day_of_week>wednesday</day_of_week>
 			<course_name>comp4985</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>sw3 1710</room>
-			<day_of_week>thursday_of_week</day_of_week>
+			<day_of_week>thursday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
@@ -108,21 +108,21 @@
 	<time slot="1230">
 		<booking>
 			<room>sw9 127</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>blaw3600</course_name>
 			<instructor>catherine ryan</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 323</room>
-			<day_of_week>wednesday_of_week</day_of_week>
+			<day_of_week>wednesday</day_of_week>
 			<course_name>comp4981</course_name>
 			<instructor>aman abdulla</instructor>
 			<type>lecture</type>
 		</booking>
 		<booking>
 			<room>sw3 1750</room>
-			<day_of_week>friday_of_week</day_of_week>
+			<day_of_week>friday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>brenda fine</instructor>
 			<type>lecture</type>
@@ -131,14 +131,14 @@
 	<time slot="1330">
 		<booking>
 			<room>sw9 127</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>blaw3600</course_name>
 			<instructor>catherine ryan</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>sw1 1205</room>
-			<day_of_week>wednesday_of_week</day_of_week>
+			<day_of_week>wednesday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>mirela gutica</instructor>
 			<type>lecture</type>
@@ -147,7 +147,7 @@
 	<time slot="1430">
 		<booking>
 			<room>sw5 1840</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4711</course_name>
 			<instructor>james parry</instructor>
 			<type>lecture</type>
@@ -156,21 +156,21 @@
 	<time slot="1530">
 		<booking>
 			<room>se12 320</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>comp4560</course_name>
 			<instructor>brenda fine</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 321</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4560</course_name>
 			<instructor>james parry</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 322</room>
-			<day_of_week>thursday_of_week</day_of_week>
+			<day_of_week>thursday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>mathew linder</instructor>
 			<type>lab</type>
@@ -179,21 +179,21 @@
 	<time slot="1630">
 		<booking>
 			<room>se12 320</room>
-			<day_of_week>monday_of_week</day_of_week>
+			<day_of_week>monday</day_of_week>
 			<course_name>comp4560</course_name>
 			<instructor>brenda fine</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 321</room>
-			<day_of_week>tuesday_of_week</day_of_week>
+			<day_of_week>tuesday</day_of_week>
 			<course_name>comp4560</course_name>
 			<instructor>james parry</instructor>
 			<type>lab</type>
 		</booking>
 		<booking>
 			<room>se12 322</room>
-			<day_of_week>thursday_of_week</day_of_week>
+			<day_of_week>thursday</day_of_week>
 			<course_name>comp4735</course_name>
 			<instructor>mathew linder</instructor>
 			<type>lab</type>
