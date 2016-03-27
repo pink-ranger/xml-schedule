@@ -100,28 +100,28 @@
 			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
 			<course_name>comp4985</course_name>
 			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
 			<course_name>comp4985</course_name>
 			<time_slot>1130</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
 			<course_name>comp4981</course_name>
 			<time_slot>1230</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
 			<course_name>comp4735</course_name>
@@ -133,18 +133,18 @@
 	</day>
 	<day code="thursday">
 		<booking>
-			<course_name>comp4985</course_name>
+			<course_name>comp4981</course_name>
 			<time_slot>0930</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
-			<course_name>comp4985</course_name>
+			<course_name>comp4981</course_name>
 			<time_slot>1030</time_slot>
 			<room>se12 323</room>
 			<instructor>aman abdulla</instructor>
-			<type>lab</type>
+			<type>lecture</type>
 		</booking>
 		<booking>
 			<course_name>comp4735</course_name>
