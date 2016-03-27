@@ -5,6 +5,7 @@ class timetable extends CI_Model {
     protected $days = array();
     protected $courses = array();
     
+    /* The constructor for the timetable class. Reads the timetable.xml and sort the data into arrays. */
     public function __construct() {
         parent::__construct();
         $this->xml = simplexml_load_file(DATAPATH . 'timetable.xml', 
@@ -44,21 +45,25 @@ class timetable extends CI_Model {
         }
     }
     
+    /* The getter function for timeslots. */
     function getTimeslots()
     {
       return $this->timeslots;
     }
     
+    /* The getter function for days. */
     function getDays()
     {
       return $this->days;
     }
     
+    /* The getter function for courses. */
     function getCourses()
     {
       return $this->courses;
     }
 
+    /* The getter function for the days dropdown menu. */
     function getDaysForDropDown()
     {
         $days = $this->days;
@@ -70,6 +75,7 @@ class timetable extends CI_Model {
         return $daysArray;
     }
 
+    /* The getter function for the times dropdown menu. */
     function  getTimesForDropdown()
     {
         $times = $this->timeslots;
@@ -81,7 +87,7 @@ class timetable extends CI_Model {
         return $timesArray;
     }
 
-
+    /* The function that returns a bookings from the times. */
     function findBookingsUsingTimesFacet($day, $slot)
     {
         $times = $this->timeslots;
@@ -101,6 +107,7 @@ class timetable extends CI_Model {
         echo NULL;
     }
 
+    /* The function that returns a bookings from the days. */
     function findBookingsUsingDaysFacet($day, $slot)
     {
         $days = $this->days;
@@ -120,6 +127,7 @@ class timetable extends CI_Model {
         echo NULL;
     }
 
+    /* The function that returns a bookings from the courses. */
     function findBookingsUsingCoursesFacet($day, $slot)
     {
         $courses = $this->courses;
@@ -145,6 +153,7 @@ class Booking {
     public $instructor;
     public $type;
     
+    /* The constructor for the Booking class. */
     public function __construct($booking) {
       $this->day = (string)$booking->day_of_week;
       $this->time = (string)$booking->time_slot;

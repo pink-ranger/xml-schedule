@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends Application {
   
+  /* The method to handle the default routing. */
   public function index()
   {
     $times = $this->timetable->getTimeslots();
@@ -70,6 +71,7 @@ class Welcome extends Application {
     $this->render();
   }
 
+  /* The routing for the search. Used when the search button is pressed. */
   public function search()
   {
     $day = $_POST['search_day'];
