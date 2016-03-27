@@ -15,3 +15,9 @@
 		<script src="/assets/js/script.js" type="text/javascript"></script>
 	</div>
 </body>
+<!--The footer for the webpage.-->
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">&copy; Group 5 (Juan Tam-Huang , Seonghyoung Lee, Vivek Kalia)</p>
+  </div>
+</footer>

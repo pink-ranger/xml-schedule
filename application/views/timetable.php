@@ -1,7 +1,5 @@
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
 <!--Navbar for the webpage. Displays the title for the webpage.-->
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse"">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
   <div class="container">
     <div class="navbar-header">
       <strong><a class="navbar-brand" href="#">BCIT Timetable</a></strong>
@@ -83,7 +81,7 @@
   </div>
 </div>
 
-<!--The booking panel sorted via times.-->
+<!--The booking panel using the times facet.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -117,7 +115,7 @@
   </div>
 </div>
 
-<!--The booking panel sorted via days.-->
+<!--The booking panel using the days facet.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -151,7 +149,7 @@
   </div>
 </div>
 
-<!--The booking panel sorted via courses.-->
+<!--The booking panel using the courses facet.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -184,10 +182,3 @@
     </table>
   </div>
 </div>
-
-<!--The footer for the webpage.-->
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted">&copy; Group 5 (Juan Tam-Huang , Seonghyoung Lee, Vivek Kalia)</p>
-  </div>
-</footer>

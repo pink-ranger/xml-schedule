@@ -5,12 +5,17 @@ class timetable extends CI_Model {
     protected $days = array();
     protected $courses = array();
     
-    /* The constructor for the timetable class. Reads the timetable.xml and sort the data into arrays. */
+    /* 
+     * The constructor for the timetable class. Reads the timetable.xml and 
+     * stores the booking based on each of the three different facets into their 
+     * respective arrays 
+     */
     public function __construct() {
         parent::__construct();
         $this->xml = simplexml_load_file(DATAPATH . 'timetable.xml', 
                 "SimpleXMLElement", LIBXML_NOENT);
         
+        /* Populates the timeslots array with the data from the timetable xml. */
         foreach($this->xml->times->time as $time) {
             $key = (string)$time['slot'];
             $bookingArray = array();
@@ -22,6 +27,7 @@ class timetable extends CI_Model {
             $this->timeslots[$key] = $bookingArray;
         }
         
+        /* Populates the days array with the data from the timetable xml. */
         foreach($this->xml->days->day as $day) {
             $key = (string)$day['code'];
             $bookingArray = array();
@@ -33,6 +39,7 @@ class timetable extends CI_Model {
             $this->days[$key] = $bookingArray;
         }
         
+        /* Populates the courses array with the data from the timetable xml. */
         foreach($this->xml->courses->course as $course) {
             $key = (string)$course['name'];
             $bookingArray = array();
@@ -45,25 +52,25 @@ class timetable extends CI_Model {
         }
     }
     
-    /* The getter function for timeslots. */
+    /* The getter function for timeslots array. */
     function getTimeslots()
     {
       return $this->timeslots;
     }
     
-    /* The getter function for days. */
+    /* The getter function for days array. */
     function getDays()
     {
       return $this->days;
     }
     
-    /* The getter function for courses. */
+    /* The getter function for courses array. */
     function getCourses()
     {
       return $this->courses;
     }
 
-    /* The getter function for the days dropdown menu. */
+    /* The getter function for the list of days for the dropdown menu. */
     function getDaysForDropDown()
     {
         $days = $this->days;
@@ -75,7 +82,7 @@ class timetable extends CI_Model {
         return $daysArray;
     }
 
-    /* The getter function for the times dropdown menu. */
+    /* The getter function for the list of times for the dropdown menu. */
     function  getTimesForDropdown()
     {
         $times = $this->timeslots;
@@ -145,6 +152,7 @@ class timetable extends CI_Model {
     }
 }
 
+/* A class that holds information about a Booking object. */
 class Booking {
     public $day; 
     public $time;
