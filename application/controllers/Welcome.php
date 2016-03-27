@@ -3,7 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends Application {
   
-  /* The method to handle the default routing. */
+  /*  
+   * The method to handle the default routing. 
+   * Retrives data from the Timetable model and passes it to the view.
+   */
   public function index()
   {
     $times = $this->timetable->getTimeslots();
@@ -52,7 +55,6 @@ class Welcome extends Application {
       $slotsListArray[] = array('slot' => $slot);
     }
     
-    
     $this->data['pagebody'] = 'timetable';
     $this->data['times'] = $timesArray;
     $this->data['days'] = $daysArray;
@@ -71,7 +73,12 @@ class Welcome extends Application {
     $this->render();
   }
 
-  /* The routing for the search. Used when the search button is pressed. */
+  /* 
+   * The routing for the search. Used when the search button is pressed. 
+   * Process the user input from the form and display a booking if found or  
+   * a list of bookings with the matching time and day if inconsistent data 
+   * is found among the three facets.
+   */
   public function search()
   {
     $day = $_POST['search_day'];
