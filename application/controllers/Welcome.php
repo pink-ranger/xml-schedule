@@ -103,7 +103,7 @@ class Welcome extends Application {
           $searchResultsArray[] = $bookingFromTimesFacet;
           $bookingFromDaysFacet->facet = "days";
           $searchResultsArray[] = $bookingFromDaysFacet;
-          $bookingFromDaysFacet->facet = "courses";
+          $bookingFromCoursesFacet->facet = "courses";
           $searchResultsArray[] = $bookingFromCoursesFacet;
           $this->data['message'] = "Inconsistent data found";
         }
