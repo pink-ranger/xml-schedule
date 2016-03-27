@@ -1,5 +1,6 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+<!--Navbar for the webpage. Displays the title for the webpage.-->
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse"">
   <div class="container">
     <div class="navbar-header">
@@ -9,11 +10,14 @@
 </nav>
 
 </br></br></br>
+
+<!--The jumbotron. Describes the information and what the webpage displays. In addition, how to use the search.-->
 <div class="jumbotron">
   <h2>COMP 4 O - Spring (Mar. to May) BCIT Timetable</h2>
   <p>This time table displays the list of bookings for the BCIT program CST for set 4O. It's sorted via time, days and courses. Select day AND time slot to search for specific course during that slot.</p>
 </div>
 
+<!--The buttons for the search capabilities. Two drop-down menus and a search button.-->
 <form action="search" name="search" method="POST">
   <span class="dropdown">
     <button class="btn btn-primary dropdown-toggle btn-lg btn-default" type="button" data-toggle="dropdown">
@@ -40,6 +44,7 @@
   <button type="submit" class="btn btn-default btn btn-lg btn-success">Search</button>
 </form>
 
+<!--The search result panel. Displays the search result.-->
 </br>
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -78,6 +83,7 @@
   </div>
 </div>
 
+<!--The booking panel sorted via times.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -111,6 +117,7 @@
   </div>
 </div>
 
+<!--The booking panel sorted via days.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -144,6 +151,7 @@
   </div>
 </div>
 
+<!--The booking panel sorted via courses.-->
 </br>
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -177,6 +185,7 @@
   </div>
 </div>
 
+<!--The footer for the webpage.-->
 <footer class="footer">
   <div class="container">
     <p class="text-muted">&copy; Group 5 (Juan Tam-Huang , Seonghyoung Lee, Vivek Kalia)</p>
